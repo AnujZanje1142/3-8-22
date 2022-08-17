@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1 {
+            height: 650px;
+            width: 900px;
+        
+        text-align: center;
+        display: none;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#p1").hide(4000);
+                $("#d2").show(5000);
+            });
+            $("#p2").click(function(){
+            $("#p1").toggle(5000);
+            $("#d2").show(4000);
+            });
+        });
+    </script>
+</head>
+<body>
+   <div id="p1">
+        <img src="Snapchat-2017168694.jpg">
+      
+   </div>
+   </div>
+   
+   <input type="button" id="p2" value="Click to Watch Image">
+</body>
+</html>
